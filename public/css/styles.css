@@ -1,0 +1,131 @@
+
+
+/*! GENERAL */
+/*! GENERAL */
+/*! GENERAL */
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris_oscuro: #666;
+    --gris_claro: #ebebeb;
+    --verde:#39b54a;
+
+    --cuerpos: 18px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos: 16px;
+    --descripciones: 16px;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--amarillo);
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+
+/** HEADER */
+/** HEADER */
+/** HEADER */
+
+.logo{
+    display: block;
+}
+
+.nav-subtitle {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-subtitle i {
+    margin-right: 3px;
+}
+
+li a i {
+    margin-left: 3px;
+}
+
+.user-box{
+    margin-top: 10px;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu i {
+    background-color: var(--celeste);
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    font-size: var(--descripciones);
+    margin-bottom: 30px;
+}
+
+/** MAIN */
+/** MAIN */
+/** MAIN */
+
+
+
+
+
+/** FOOTER */
+/** FOOTER */
+/** FOOTER */
+
+footer{
+    padding-top: 10px;
+    background-color: var(--gris_claro);
+}
+
+.section-footer-1, .section-footer-2, .section-footer-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.icon{
+    font-size: var(--titulares);
+    display: contents;
+}
+
+.icon i {
+    font-size: 2em;
+    color: var(--celeste);
+}
+
+.section-footer-1, .section-footer-2, .section-footer-3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+}
