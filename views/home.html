@@ -21,15 +21,18 @@
 <body>
     <!--* HEADER -->
     <header>
-        <div>
-            <nav>
-                <img src="images/logo-mercado-liebre.svg" alt="logo" class="logo">
+        <div class="header">
+            <img src="images/logo-mercado-liebre.svg" alt="logo" class="logo">
+            <div class="search-bar">
                 <input type="search" name="" id="">
-                <h2>Lorem, ipsum dolor.</h2>
-                <div class="nav-subtitle">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <p>Compra en Lorem, ipsum dolor.</p>
-                </div>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <h2>Lorem, ipsum dolor.</h2>
+            <div class="nav-subtitle">
+                <i class="fas fa-hand-holding-usd"></i>
+                <p>Compra en Lorem, ipsum dolor.</p>
+            </div>
+            <nav>
                 <ul class="page-box">
                     <li> <a href="#">Ofertas</a></li>
                     <li> <a href="#">Tiendas Oficiales</a></li>
@@ -41,67 +44,44 @@
                     <li> <a href="#">Ingrelorem<i class="fas fa-key"></i></a></li>
                     <li> <a href="#">lorem<i class="fas fa-cart-arrow-down"></i></a></li>
                 </ul>
-
-                <div class="burger-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-
             </nav>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
-
     <!--* MAIN -->
     <main>
-        <section>
-            <img src="images/img-home-banner.jpg" alt="img" height="200px">
-            <ul><li><h3>WHAT IS LOREM</h3></li></ul>
-            <div>
-                <img src="images/img-cafetera-moulinex.jpg" alt="img" height="200px">
-                <p>$6.770</p>
-                <div>
-                    <p>40% off lorem</p>
+        <img src="images/img-home-banner.jpg" alt="img" class="banner">
+        <section class="main-section">
+            <h3 class="discounts-title">WHAT IS LOREM</h3>
+
+            <div class="product">
+                <div class="image-product">
+                    <img src="images/img-cafetera-moulinex.jpg" alt="img">
+                </div>
+
+                <div class="product-info">
+                    <div class="total-sale">
+                        <div class="first-circle">
+                            <i class="fas fa-truck-moving"></i>
+                        </div>
+                        <p>$6.770</p>
+                    </div>
+                    <div class="product-discount">
+                        <p>40% off lorem</p>
+                    </div>
+                    <div class="product-name">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <img src="images/img-macbook-pro-2019.jpg" alt="img" height="200px">
-                <p>$6.770</p>
-                <div>
-                    <p>40% off lorem</p>
-                </div>
-            </div>
-            <div>
-                <img src="images/img-samsung-galaxy-s10.jpg" alt="img" height="200px">
-                <p>$6.770</p>
-                <div>
-                    <p>40% off lorem</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <ul><li><h3>WHAT IS LOREM</h3></li></ul>
-            <div>
-                <img src="images/img-tv-samsung-smart.jpg" alt="img" height="200px">
-                <p>$6.770</p>
-                <div>
-                    <p>40% off lorem</p>
-                </div>
-            </div>
-            <div>
-                <img src="images/img-cafetera-moulinex.jpg" alt="img" height="200px">
-                <p>$6.770</p>
-                <div>
-                    <p>40% off lorem</p>
-                </div>
-            </div>
-            <div>
-                <img src="images/img-cafetera-moulinex.jpg" alt="img" height="200px">
-                <p>$6.770</p>
-                <div>
-                    <p>40% off lorem</p>
-                </div>
-            </div>
+
         </section>
     </main>
+
+    check comments
+    <!-- It should be more products, but I won't do that now. I'm expecting more changes to the HTML. keep yourself safe <3-->
 
     <!--* FOOTER  -->
     <footer>

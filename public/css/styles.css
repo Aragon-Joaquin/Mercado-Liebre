@@ -12,17 +12,22 @@
     --gris_claro: #ebebeb;
     --verde:#39b54a;
 
+    --text-color: #9f9f9f;
     --cuerpos: 18px;
     --titulares: 24px;
     --precios: 18px;
     --descuentos: 16px;
     --descripciones: 16px;
+
+    --border-products: 1px solid #ebebeb; 
+    /* #ebebeb */
 }
 
 
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -31,6 +36,7 @@ body{
 }
 
 img{
+    height: 100%;
     width: 100%;
 }
 
@@ -84,19 +90,86 @@ header {
     margin-bottom: 30px;
 }
 
-/** MAIN */
-/** MAIN */
-/** MAIN */
+/*todo  MAIN */
+/*!     MAIN */
+/**     MAIN */
+
+.banner {
+    height: 100%;
+    width: 100%;
+}
+
+.discounts-section{
+    width: 90vw;
+
+}
+
+main{
+    background-color: var(--gris_claro);
+}
+
+.main-section{
+    width: 90vw;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.product {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding:10px 15px;
+}
+
+.image-product img {
+    border-bottom: var(--border-products);
+}
 
 
+.first-circle{
+    display: flex;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 3px solid var(--verde);
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.first-circle i {
+    color: var(--verde);
+}
 
+.total-sale p{
+    padding-top: 5px;
+    font-size: var(--precios);
+}
+
+.product-discount p {
+    color: var(--verde);
+    font-size: var(--descuentos);
+}
+
+.product-name p{
+    padding-top: 10px;
+    font-size: var(--cuerpos);
+    color: var(--text-color);
+}
+
+.discounts-title {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: var(--titulares);
+    color: var(--text-color);
+}
 
 /** FOOTER */
 /** FOOTER */
 /** FOOTER */
 
 footer{
+    margin-top: 50px;
     padding-top: 10px;
     background-color: var(--gris_claro);
 }
@@ -115,7 +188,7 @@ footer{
 }
 
 .icon i {
-    font-size: 2em;
+    font-size: 1.5em;
     color: var(--celeste);
 }
 
@@ -128,4 +201,23 @@ footer{
 .copyright {
     margin-top: 30px;
     text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+    .product{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .product-name {
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
 }
