@@ -14,7 +14,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(puerto, () => {
-    console.log('Aplicación esuchando en puerto 3001');
+    console.log(`Aplicación esuchando en http://localhost:${puerto}`);
 });
-
-
