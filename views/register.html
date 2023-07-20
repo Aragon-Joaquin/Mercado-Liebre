@@ -1,0 +1,138 @@
+<!-- 
+Nombre y apellido
+Nombre de usuari@
+Fecha de nacimiento
+Domicilio
+Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender)
+Categorías de interés (puede elegir más de una)
+Electro
+Moda
+Hogar
+Juguetería
+Vida sana
+Foto de usuario
+Contraseña
+Confirmar contraseña
+Botón de enviar que nos lleve a la página principal
+Botón de borrar todos los datos del formulario 
+-->
+
+<form action="" method="post" class="form">
+    <div class="nombre-apellido">
+        <label for="nombre">
+            <input type="text" name="nombre" value="nombre">
+            Nombre:     
+        </label>
+        <label for="apellido">
+            <input type="text" name="apellido" value="apellido">
+            Apellido:     
+        </label>
+    </div>
+
+    <div class="nombre-apellido-user">
+        <label for="nombre-user">
+            <input type="text" name="nombre-user" value="nombre-user">
+            Nombre de usuario:     
+        </label>
+        <label for="apellido-user">
+            <input type="text" name="apellido-user" value="apellido-user">
+            Apellido de usuario:     
+        </label>
+    </div>
+
+    <div class="datos-adicionales">
+        <label for="nacimiento-fecha">
+            <input type="date" name="nacimiento-fecha" value="nacimiento-fecha">
+            Fecha de nacimiento:     
+        </label>
+        <label for="domicilio">
+            <input type="text" name="domicilio" value="domicilio">
+            Domicilio:     
+        </label>
+    </div>
+
+    <div class="user">
+        <div class="vendedor">
+            <label for="vendedor">
+                <input type="radio" name="tipo" value="vendedor" id="vendedor">
+                Vendedor
+            </label>
+        </div>
+
+        <div class="comprador">
+            <label for="comprador">
+                <input type="radio" name="tipo" value="comprador" id="comprador">
+                Comprador
+            </label>
+        </div>
+    </div>
+
+    <div class="intereses">
+        <div class="electro">
+            <label for="electro">
+                <input type="checkbox" name="interes" value="electro" id="electro">
+                Electro
+            </label>
+        </div>
+
+        <div class="moda">
+            <label for="moda">
+                <input type="checkbox" name="interes" value="moda" id="moda">
+                Moda
+            </label>
+        </div>
+
+        <div class="hogar">
+            <label for="hogar">
+                <input type="checkbox" name="interes" value="hogar" id="hogar">
+                Hogar
+            </label>
+        </div>
+
+        <div class="jugueteria">
+            <label for="jugueteria">
+                <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
+                Jugueteria
+            </label>
+        </div>
+
+        <div class="vida-sana">
+            <label for="vida-sana">
+                <input type="checkbox" name="interes" value="vida-sana" id="vida-sana">
+                Vida sana
+            </label>
+        </div>
+    </div>  
+    
+    <div class="foto-user">
+        <label for="foto-user">
+            <input type="file" name="foto-user" value="foto-user" id="foto-user">
+            Ingresa tu foto
+        </label>
+    </div>
+
+    <div class="contrasena">
+        <div class="contrasena-select">
+            <label for="contrasena-select">
+                <input type="password" name="contrasena-select" value="contrasena-select" id="contrasena-select">
+                Contraseña:
+            </label>
+        </div>
+
+        <div class="contrasena-confirm">
+            <label for="contrasena-confirm">
+                <input type="password" name="contrasena-confirm" value="contrasena-confirm" id="contrasena-confirm">
+                Confirma contraseña:
+            </label>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="submit">
+            <button type="submit">Enviar</button>
+        </div>
+        <div class="reset">
+            <button type="reset">Resetear</button>
+        </div>
+    </div>
+</form>
