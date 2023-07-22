@@ -1,0 +1,19 @@
+@import url("../normalize.css");
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    margin: 0px 5vh;
+}
+
+
+
+label {
+    display: block;
+}
+
+.names {
+    display: flex;
+}

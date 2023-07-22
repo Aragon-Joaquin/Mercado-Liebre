@@ -1,4 +1,10 @@
 
+header {
+    background-color: var(--amarillo);
+    padding-bottom: 10px;
+    font-size: var(--descripciones);
+}
+
 .logo{
     width: 50vw;
 }
@@ -41,11 +47,6 @@ li a i {
 a {
     text-decoration: none;
     color: black;
-}
-
-header {
-    font-size: var(--descripciones);
-    margin-bottom: 20px;
 }
 
 .top-nav {

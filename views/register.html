@@ -1,138 +1,169 @@
-<!-- 
-Nombre y apellido
-Nombre de usuari@
-Fecha de nacimiento
-Domicilio
-Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender)
-Categorías de interés (puede elegir más de una)
-Electro
-Moda
-Hogar
-Juguetería
-Vida sana
-Foto de usuario
-Contraseña
-Confirmar contraseña
-Botón de enviar que nos lleve a la página principal
-Botón de borrar todos los datos del formulario 
--->
+<!DOCTYPE html>
+<html lang="en">
 
-<form action="" method="post" class="form">
-    <div class="nombre-apellido">
-        <label for="nombre">
-            <input type="text" name="nombre" value="nombre">
-            Nombre:     
-        </label>
-        <label for="apellido">
-            <input type="text" name="apellido" value="apellido">
-            Apellido:     
-        </label>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <title>Document</title>
 
-    <div class="nombre-apellido-user">
-        <label for="nombre-user">
-            <input type="text" name="nombre-user" value="nombre-user">
-            Nombre de usuario:     
-        </label>
-        <label for="apellido-user">
-            <input type="text" name="apellido-user" value="apellido-user">
-            Apellido de usuario:     
-        </label>
-    </div>
+    <!--* google -->
 
-    <div class="datos-adicionales">
-        <label for="nacimiento-fecha">
-            <input type="date" name="nacimiento-fecha" value="nacimiento-fecha">
-            Fecha de nacimiento:     
-        </label>
-        <label for="domicilio">
-            <input type="text" name="domicilio" value="domicilio">
-            Domicilio:     
-        </label>
-    </div>
+    <!--* templates -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
-    <div class="user">
-        <div class="vendedor">
-            <label for="vendedor">
-                <input type="radio" name="tipo" value="vendedor" id="vendedor">
-                Vendedor
-            </label>
-        </div>
+    <!--* own styles -->
+    <link rel="stylesheet" href="/css/subdir/register.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
 
-        <div class="comprador">
-            <label for="comprador">
-                <input type="radio" name="tipo" value="comprador" id="comprador">
-                Comprador
-            </label>
-        </div>
-    </div>
+<body>
+    <!--* HEADER -->
+    <header>
+        <div insert-navbar-html="other/navbar.html"></div>
+    </header>
+    <!--* MAIN -->
+    <main>
+        <form action="" method="post" class="form">
+            <div class="container">
 
-    <div class="intereses">
-        <div class="electro">
-            <label for="electro">
-                <input type="checkbox" name="interes" value="electro" id="electro">
-                Electro
-            </label>
-        </div>
 
-        <div class="moda">
-            <label for="moda">
-                <input type="checkbox" name="interes" value="moda" id="moda">
-                Moda
-            </label>
-        </div>
+                <div class="names">
+                    <div class="nombre-apellido">
+                        <label for="nombre">
+                            Nombre:
+                        </label>
+                        <input type="text" name="nombre" id="nombre">
 
-        <div class="hogar">
-            <label for="hogar">
-                <input type="checkbox" name="interes" value="hogar" id="hogar">
-                Hogar
-            </label>
-        </div>
+                        <label for="apellido">
+                            Apellido:
+                        </label>
+                        <input type="text" name="apellido" id="apellido">
 
-        <div class="jugueteria">
-            <label for="jugueteria">
-                <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
-                Jugueteria
-            </label>
-        </div>
+                    </div>
 
-        <div class="vida-sana">
-            <label for="vida-sana">
-                <input type="checkbox" name="interes" value="vida-sana" id="vida-sana">
-                Vida sana
-            </label>
-        </div>
-    </div>  
-    
-    <div class="foto-user">
-        <label for="foto-user">
-            <input type="file" name="foto-user" value="foto-user" id="foto-user">
-            Ingresa tu foto
-        </label>
-    </div>
+                    <div class="nombre-apellido-user">
+                        <label for="nombre-user">
+                            Nombre de usuario:
+                        </label>
+                        <input type="text" name="nombre-user" id="nombre-user">
 
-    <div class="contrasena">
-        <div class="contrasena-select">
-            <label for="contrasena-select">
-                <input type="password" name="contrasena-select" value="contrasena-select" id="contrasena-select">
-                Contraseña:
-            </label>
-        </div>
+                        <label for="apellido-user">
+                            Apellido de usuario:
+                        </label>
+                        <input type="text" name="apellido-user" id="apellido-user">
 
-        <div class="contrasena-confirm">
-            <label for="contrasena-confirm">
-                <input type="password" name="contrasena-confirm" value="contrasena-confirm" id="contrasena-confirm">
-                Confirma contraseña:
-            </label>
-        </div>
-    </div>
+                    </div>
+                </div>
 
-    <div class="botones">
-        <div class="submit">
-            <button type="submit">Enviar</button>
-        </div>
-        <div class="reset">
-            <button type="reset">Resetear</button>
-        </div>
-    </div>
-</form>
+
+                <div class="datos-adicionales">
+                    <label for="nacimiento-fecha">
+                        Fecha de nacimiento:
+                    </label>
+                    <input type="date" name="nacimiento-fecha" id="nacimiento-fecha">
+
+                    <label for="domicilio">
+                        Domicilio:
+                    </label>
+                    <input type="text" name="domicilio" id="domicilio">
+
+                </div>
+
+                <div class="user">
+                    <div class="vendedor">
+                        <label for="vendedor">
+                            <input type="radio" name="tipo" value="vendedor" id="vendedor">
+                            Vendedor
+                        </label>
+                    </div>
+
+                    <div class="comprador">
+                        <label for="comprador">
+                            <input type="radio" name="tipo" value="comprador" id="comprador">
+                            Comprador
+                        </label>
+                    </div>
+                </div>
+
+                <div class="intereses">
+                    <div class="electro">
+                        <label for="electro">
+                            <input type="checkbox" name="interes" value="electro" id="electro">
+                            Electro
+                        </label>
+                    </div>
+
+                    <div class="moda">
+                        <label for="moda">
+                            <input type="checkbox" name="interes" value="moda" id="moda">
+                            Moda
+                        </label>
+                    </div>
+
+                    <div class="hogar">
+                        <label for="hogar">
+                            <input type="checkbox" name="interes" value="hogar" id="hogar">
+                            Hogar
+                        </label>
+                    </div>
+
+                    <div class="jugueteria">
+                        <label for="jugueteria">
+                            <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
+                            Jugueteria
+                        </label>
+                    </div>
+
+                    <div class="vida-sana">
+                        <label for="vida-sana">
+                            <input type="checkbox" name="interes" value="vida-sana" id="vida-sana">
+                            Vida sana
+                        </label>
+                    </div>
+                </div>
+
+                <div class="foto-user">
+                    <label for="foto-user">
+                        <input type="file" name="foto-user" value="foto-user" id="foto-user" accept=".png, .jpg, .jpeg">
+                        Ingresa tu foto
+                    </label>
+                </div>
+
+                <div class="contrasena">
+                    <div class="contrasena-select">
+                        <label for="contrasena-select">
+                            Contraseña:
+                        </label>
+                        <input type="password" name="contrasena-select" id="contrasena-select">
+
+                    </div>
+
+                    <div class="contrasena-confirm">
+                        <label for="contrasena-confirm">
+                            Confirma contraseña:
+                        </label>
+                        <input type="password" name="contrasena-confirm" id="contrasena-confirm">
+
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <div class="submit">
+                        <button type="submit">Enviar</button>
+                    </div>
+                    <div class="reset">
+                        <button type="reset">Resetear</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+        <!--* FOOTER  -->
+        <footer>
+            <div insert-navbar-html="other/footer.html"></div>
+        </footer>
+
+        <!--* Footer + Navbar -->
+        <script src="assets/footer-navbar.js" type="application/javascript"></script>
+</body>
