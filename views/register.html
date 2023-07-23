@@ -35,7 +35,7 @@
                         </label>
                         <input type="text" name="nombre" id="nombre">
 
-                        <label for="apellido">
+                        <label for="apellido" style="margin-top: 10px;">
                             Apellido:
                         </label>
                         <input type="text" name="apellido" id="apellido">
@@ -48,7 +48,7 @@
                         </label>
                         <input type="text" name="nombre-user" id="nombre-user">
 
-                        <label for="apellido-user">
+                        <label for="apellido-user" style="margin-top: 10px;">
                             Apellido de usuario:
                         </label>
                         <input type="text" name="apellido-user" id="apellido-user">
@@ -58,15 +58,19 @@
 
 
                 <div class="datos-adicionales">
-                    <label for="nacimiento-fecha">
-                        Fecha de nacimiento:
-                    </label>
-                    <input type="date" name="nacimiento-fecha" id="nacimiento-fecha">
-
-                    <label for="domicilio">
-                        Domicilio:
-                    </label>
-                    <input type="text" name="domicilio" id="domicilio">
+                    <div class="fecha">
+                        <label for="nacimiento-fecha">
+                            Fecha de nacimiento:
+                        </label>
+                        <input type="date" name="nacimiento-fecha" id="nacimiento-fecha">
+    
+                    </div>
+                    <div class="domicilio">
+                        <label for="domicilio">
+                            Domicilio:
+                        </label>
+                        <input type="text" name="domicilio" id="domicilio">
+                    </div>
 
                 </div>
 
@@ -125,9 +129,9 @@
 
                 <div class="foto-user">
                     <label for="foto-user">
-                        <input type="file" name="foto-user" value="foto-user" id="foto-user" accept=".png, .jpg, .jpeg">
-                        Ingresa tu foto
+                        Ingresa tu foto:
                     </label>
+                    <input type="file" name="foto-user" value="foto-user" id="foto-user" accept=".png, .jpg, .jpeg">
                 </div>
 
                 <div class="contrasena">
