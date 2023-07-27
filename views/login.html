@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
@@ -11,33 +12,62 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
     <!--* own styles -->
-    <link rel="stylesheet" href="/css/subdir/register.css">
+    <link rel="stylesheet" href="/css/subdir/login.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
 
 </head>
+
 <body>
-    <form action="" method="post" class="login">
-        <div class="user-name">
-            <label for="user-name">
-                Nombre de usuario:
-                <input type="text" name="user-name" value="user-name">
-            </label>
-        </div>
+    <!--* HEADER -->
+    <header>
+        <div insert-navbar-html="other/navbar.html"></div>
+    </header>
+    <!--* MAIN -->
+    <main>
+        <div class="container-form">
+            <form action="" method="post" class="login">
+                <div class="container">
+                    <div class="user-name">
+                        <label for="user-name">
+                            Nombre de usuario:
+                            <input type="text" name="user-name">
+                        </label>
+                    </div>
 
-        <div class="contrasena">
-            <label for="contrasena">
-                Contraseña:
-                <input type="password" name="contrasena" value="contrasena">
-            </label>
-        </div>
+                    <div class="contrasena">
+                        <label for="contrasena">
+                            Contraseña:
+                            <input type="password" name="contrasena">
+                        </label>
+                    </div>
 
-        <div class="button">
-            <a href="/" class="retroceder">
-                <i class="fas fa-arrow-left"></i>
-                Go back
-            </a>
+                    <div class="button-flex">
+                        <div class="submit">
+                            <a href="/" class="send">
+                                <!-- <i class="forgot the name page :skull:"></i> -->
+                                Submit
+                            </a>
+                        </div>
+                        <div class="button">
+                            <a href="/" class="retroceder">
+                                <i class="fas fa-arrow-left"></i>
+                                Go back
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
         </div>
-    </form>
+    </main>
+    <!--* FOOTER  -->
+    <footer>
+        <div insert-navbar-html="other/footer.html"></div>
+    </footer>
+
+    <!--* Footer + Navbar -->
+    <script src="assets/footer-navbar.js" type="application/javascript"></script>
 </body>
+
 </html>

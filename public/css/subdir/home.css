@@ -37,6 +37,7 @@ main{
     background-color: #fff;
     margin: 10px 10px;
     padding:10px 15px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .image-product img {
@@ -60,8 +61,13 @@ main{
     flex-wrap: wrap;
 }
 
+.first-circle:hover i{
+    transform: rotate(-90deg);
+}
+
 .first-circle i {
     color: var(--verde);
+    transition: all 0.5s ease;
 }
 
 .total-sale {
@@ -73,15 +79,16 @@ main{
 }
 
 .product-name{
-    display: none;
+    position:absolute;
+    opacity: 0;
     margin-top: 2px;
     font-size: var(--cuerpos);
     color: var(--text-color);
+    transition: opacity  0.3s ease;
 }
 
 .discounts-title {
-    margin-left: 5vw;
-    margin-bottom: 10px;
+    margin:20px 0px 5px 5%;
     font-weight: normal;
     font-size: var(--titulares);
     color: var(--text-color);
@@ -103,11 +110,12 @@ main{
     align-items: baseline;
     align-content: center;
     flex-wrap: wrap;
+    
 }
 
 
 @media screen and (min-width: 480px) {
-    .product{
+    .product:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .main-section {
@@ -119,10 +127,12 @@ main{
     .product {
         max-width: 40vw;
     }
-
-    .product-name {
-        display: block;
+    
+    .product:hover .product-name{
+        position: relative;
+        opacity: 1;
     }
+    
 
 }
 

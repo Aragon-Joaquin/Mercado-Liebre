@@ -60,36 +60,46 @@ a {
 .search-bar {
     display: flex;
     margin-left: 10px;
+    background-color: #fff;
+    border-radius: 10px   
 }
 
 .search-bar input {
     height: 30px;
     border: none;
     padding: 5px;
-    border-radius: 10px 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 
-.search-bar button {
+.search-bar input:focus{
+    outline: none;
+    box-shadow:inset 0px 0px 0px 2px #000;
+}
+
+.search-icon {
+    display: flex;
+    background: #fff;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.search-icon button {
     background-color:transparent;
     border:0;
     position: relative;
-    left: -20px;
     cursor: pointer;
-    z-index: 1;
+    padding: 0px 5px;
+    border-left: 1px solid var(--gris_oscuro);
 }
 
-.search-bar button::after{
+
+/* .search-icon button::after{
     content: "";
     position: relative;
     left: -20px;
     border-left: 1px solid var(--gris_oscuro);
     
-}
-
-.submit-header{
-    margin: 0px;
-    padding: 0px;
-}
+    OLD DESIGN
+} */
 
 .nav-options {
     display: none;

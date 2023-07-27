@@ -1,0 +1,92 @@
+@import url("../normalize.css");
+
+body {
+    background: var(--amarillo);
+}
+
+main {
+    padding: 50px 0px;
+    background-color: #ebebeb;
+}
+
+
+main input[type=text],
+main input[type=date],
+main input[type=password] {
+    margin: 5px 5px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #00000040;
+    border-radius: 4px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:20px 10vw;
+    background-color: #fff;
+    border: 3px solid var(--gris_oscuro);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container > div {
+    margin-top: 20px;
+}
+.user-name,
+.contrasena {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    background-color: var(--gris_oscuro);
+    transition: all 0.3s ease;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.submit {
+    background-color: var(--celeste);
+    transition: all 0.3s ease;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button a {
+    color: var(--gris_claro);
+}
+
+.button:hover,
+.submit:hover {
+    filter: brightness(85%);
+}
+
+@media screen and (min-width: 769px) {
+    .container-form {
+        margin:20px 30vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-form{
+        margin: 20px 10vw;
+    }
+
+    .user-name input,
+    .contrasena input {
+        width: 100px;
+}   
+
+}
