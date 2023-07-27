@@ -88,9 +88,8 @@ a {
     position: relative;
     cursor: pointer;
     padding: 0px 5px;
-    border-left: 1px solid var(--gris_oscuro);
+    border-left: 1px solid var(--gris_claro);
 }
-
 
 /* .search-icon button::after{
     content: "";
